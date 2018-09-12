@@ -1,0 +1,13 @@
+{% for i in (1..3) %}
+<div class="widget widget__custom widget__custom_{{ i }}">
+	{% capture block_icon %}font_icons{{ i }}{% endcapture %}
+	{% capture block_title1 %}custom_sidebar{{ i }}_title1{% endcapture %}
+	{% capture block_title2 %}custom_sidebar{{ i }}_title2{% endcapture %}
+	{% capture block_text %}custom_sidebar{{ i }}_text{% endcapture %}
+
+    <i class="fa {{ settings[block_icon] }}"></i>
+    <h4>{{ settings[block_title1] }}</h4>
+    <h5>{{ settings[block_title2] }}</h5>
+    <p>{{ settings[block_text] }}</p>
+</div>
+{% endfor %}

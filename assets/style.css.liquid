@@ -986,7 +986,7 @@ html, body {
 	left: 0;
 	top: 0;
 	z-index: -1;
-	background: {{ settings.body_bg_color }};
+	{% comment %} background: {{ settings.body_bg_color }};
 	 /* Old browsers */
 background: -webkit-linear-gradient(top, {{ body_bg_color_dark }} 0%,{{ settings.body_bg_color }} 100%) !important;
 	 /* Chrome10+,Safari5.1+ */
@@ -999,7 +999,7 @@ background: -ms-linear-gradient(top, {{ body_bg_color_dark }} 0%,{{ settings.bod
 background: -o-linear-gradient(top, {{ body_bg_color_dark }} 0%,{{ settings.body_bg_color }} 100%) !important;
 	 /* Opera 11.10+ */
 background: linear-gradient(to bottom, {{ body_bg_color_dark }} 0%,{{ settings.body_bg_color }} 100%) !important;
-	 /* W3C */
+	 /* W3C */ {% endcomment %}
 }
 
 

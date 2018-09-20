@@ -89,7 +89,7 @@
 
          {% comment %} <div id="product_description" class="rte" itemprop="description">
             <h4>Description:</h4>
-            {% include 'product-description-tabs' %}
+            {{ product.description }}
           </div>  {% endcomment %}
 
          {% comment %} {% include 'snippet-addthis' %} {% endcomment %}
@@ -124,7 +124,8 @@
       	
         <div class="col-lg-12 mt-5">
           <div id="product_description" class="rte" itemprop="description">
-            {% include 'product-description-tabs' %}
+            <h4>Description:</h4>
+            {{ product.description }}
           </div> 
         </div>
 

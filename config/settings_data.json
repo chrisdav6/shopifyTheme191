@@ -218,15 +218,6 @@
     "collection_listing_image_size": "compact",
     "custom_footer2_list": "footer",
     "custom_footer3_list": "catalog",
-    "sections": {
-      "monday": {
-        "type": "monday",
-        "settings": {
-          "text-box-title": "Test",
-          "text-box-content": "<p>My Test<\/p>"
-        }
-      }
-    },
     "content_for_index": []
   },
   "presets": {}

@@ -142,12 +142,12 @@
             </div>
 
             <!-- HEADER CART -->
-            <div class="header_cart">
+            {% comment %} <div class="header_cart">
                 <a href="/cart">
                     <div><i class="fa fa-shopping-cart"></i><b>Shopping<br>cart<span class="cart_items"><span class="cart-total-items"><span class="count">{{ cart.item_count }}</span></span>item(s)</span></b></div>
                     <span class="btn checkout">Check out</span>
                 </a>
-            </div>
+            </div> {% endcomment %}
 
             <!-- CUSTOM HEADER BLOCK -->
             <div class="custom_header">
@@ -159,7 +159,7 @@
 			<div class="clearfix"></div>
 
             <!-- HEADER SEARCH -->
-            <div class="row">
+            {% comment %} <div class="row">
             	<div class="col-sm-{% if width_sidebars == true %}9{% else %}12{% endif %} {% if settings.enable_sidebar == 'left' and width_sidebars == true %}col-sm-offset-3{% endif %}">
 		            <div class="header_search">
 		                <form action="/search" method="get" class="search-form" role="search">
@@ -169,7 +169,7 @@
 		                </form>
 		            </div>
             	</div>
-            </div>
+            </div> {% endcomment %}
         </div>
     </div>
 </header>
